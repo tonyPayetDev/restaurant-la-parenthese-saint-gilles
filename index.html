@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Parenthèse - Restaurant Créole | Hôtel Latitude 21 Saint-Gilles</title>
+    <meta name="description" content="Restaurant La Parenthèse à Saint-Gilles - Cuisine créole raffinée à l'hôtel Latitude 21. Découvrez nos plats authentiques dans un cadre élégant.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">La Parenthèse</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="btn-reserver">Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Hôtel Latitude 21</p>
+            <h1>Restaurant La Parenthèse à Saint-Gilles<br>Cuisine créole raffinée</h1>
+            <p class="hero-text">Une expérience gastronomique unique au cœur de Saint-Gilles-les-Bains</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+                <a href="#menu" class="btn btn-secondary">Découvrir le menu</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <section class="about" id="a-propos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600" alt="Intérieur du restaurant La Parenthèse">
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Notre Histoire</span>
+                    <h2>Une Parenthèse Enchantée</h2>
+                    <p>Situé au sein de l'<strong>Hôtel Latitude 21</strong> à Saint-Gilles-les-Bains, le Restaurant La Parenthèse vous invite à un voyage culinaire exceptionnel. Notre chef sublime les saveurs créoles avec une touche de modernité et d'élégance.</p>
+                    <p>Chaque plat raconte l'histoire de la Réunion : épices exotiques, poissons frais de l'océan Indien, et produits locaux soigneusement sélectionnés. Dans un cadre raffiné et chaleureux, profitez d'une expérience gastronomique inoubliable.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🍽️</span>
+                            <h4>Cuisine Créole Raffinée</h4>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌊</span>
+                            <h4>Vue sur l'Océan</h4>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⭐</span>
+                            <h4>Cadre 4 Étoiles</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Notre Carte</span>
+                <h2>Découvrez Nos Saveurs</h2>
+                <p>Une cuisine créole authentique revisitée avec finesse</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="entrees">Entrées</button>
+                <button class="menu-tab" data-tab="plats">Plats</button>
+                <button class="menu-tab" data-tab="desserts">Desserts</button>
+                <button class="menu-tab" data-tab="cocktails">Cocktails</button>
+            </div>
+
+            <div class="menu-content">
+                <div class="menu-panel active" id="entrees">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Carry de Camarons</h4>
+                                <span class="price">14 €</span>
+                            </div>
+                            <p>Gambas locales aux épices douces, riz basmati parfumé</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salade Exotique</h4>
+                                <span class="price">12 €</span>
+                            </div>
+                            <p>Avocat, mangue, crevettes et vinaigrette passion</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Accras de Morue</h4>
+                                <span class="price">10 €</span>
+                            </div>
+                            <p>Beignets de morue traditionnels, sauce rougail</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tartare de Thon</h4>
+                                <span class="price">16 €</span>
+                            </div>
+                            <p>Thon frais, huile de sésame, gingembre et coriandre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-panel" id="plats">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Rougail Saucisse</h4>
+                                <span class="price">22 €</span>
+                            </div>
+                            <p>Saucisses fumées, sauce tomate épicée, riz créole</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Carry de Poisson</h4>
+                                <span class="price">26 €</span>
+                            </div>
+                            <p>Poisson du jour, lait de coco, épices créoles</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Boucané Bringé</h4>
+                                <span class="price">24 €</span>
+                            </div>
+                            <p>Viande fumée, haricots rouges, riz parfumé</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Civet de Zourite</h4>
+                                <span class="price">28 €</span>
+                            </div>
+                            <p>Poulpe mijoté, vin rouge, thym, poivre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-panel" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tarte aux Ananas</h4>
+                                <span class="price">10 €</span>
+                            </div>
+                            <p>Ananas Victoria rôti, glace vanille bourbon</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Parfum Exotique</h4>
+                                <span class="price">12 €</span>
+                            </div>
+                            <p>Mangue, passion, coco et biscuit coco croustillant</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Flan Coco</h4>
+                                <span class="price">9 €</span>
+                            </div>
+                            <p>Flan traditionnel réunionnais, caramel maison</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Profiteroles</h4>
+                                <span class="price">11 €</span>
+                            </div>
+                            <p>Choux maison, glace vanille, sauce chocolat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-panel" id="cocktails">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Ti Punch Classique</h4>
+                                <span class="price">9 €</span>
+                            </div>
+                            <p>Rhum blanc, sirop de canne, citron vert</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Planteur Maison</h4>
+                                <span class="price">11 €</span>
+                            </div>
+                            <p>Rhum ambré, jus de fruits exotiques, épices</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Cocktail Litchi Passion</h4>
+                                <span class="price">12 €</span>
+                            </div>
+                            <p>Vodka, litchi, passion, prosecco</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Mojito Créole</h4>
+                                <span class="price">10 €</span>
+                            </div>
+                            <p>Rhum, menthe fraîche, citron vert, gingembre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Galerie</span>
+                <h2>L'Ambiance La Parenthèse</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Salle du restaurant">
+                    <div class="gallery-overlay">
+                        <span>Salle Principale</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" alt="Plat créole">
+                    <div class="gallery-overlay">
+                        <span>Nos Plats</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400" alt="Cocktails">
+                    <div class="gallery-overlay">
+                        <span>Cocktails</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="Terrasse">
+                    <div class="gallery-overlay">
+                        <span>Terrasse</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=400" alt="Dessert">
+                    <div class="gallery-overlay">
+                        <span>Desserts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-info">
+                    <span class="section-tag">Réservation</span>
+                    <h2>Réservez Votre Table</h2>
+                    <p>Pour une expérience gastronomique mémorable à La Parenthèse, nous vous recommandons de réserver en avance. Notre équipe se fera un plaisir de vous accueillir.</p>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Hôtel Latitude 21<br>46 Rue de Paris, 97434 Saint-Gilles-les-Bains</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+262 262 123 456</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🕒</span>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lundi - Samedi : 12h00 - 14h30 | 19h00 - 22h00<br>Dimanche : 12h00 - 15h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-wrapper">
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-group">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="heure">Heure</label>
+                                <select id="heure" name="heure" required>
+                                    <option value="">Choisir...</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="personnes">Nombre de personnes</label>
+                            <select id="personnes" name="personnes" required>
+                                <option value="">Choisir...</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="7+">7 et +</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message spécial (optionnel)</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Confirmer la réservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2>Ce Que Disent Nos Clients</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Une expérience culinaire exceptionnelle ! Les saveurs créoles sont sublimées avec une touche moderne. Le cadre de l'hôtel Latitude 21 est magnifique."</p>
+                    <div class="testimonial-author">
+                        <strong>Marie L.</strong>
+                        <span>Paris, France</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Le meilleur restaurant de Saint-Gilles ! Le carry de poisson est à tomber par terre. Service impeccable et vue magnifique sur l'océan."</p>
+                    <div class="testimonial-author">
+                        <strong>Jean-Pierre D.</strong>
+                        <span>Lyon, France</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Un dîner inoubliable en couple. L'ambiance est romantique, les plats sont délicieux et les cocktails exotiques parfaits. À ne pas manquer !"</p>
+                    <div class="testimonial-author">
+                        <strong>Sophie et Marc</strong>
+                        <span>Bruxelles, Belgique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>La Parenthèse</h3>
+                    <p>Restaurant créole raffiné au sein de l'Hôtel Latitude 21 à Saint-Gilles-les-Bains. Une expérience gastronomique unique alliant tradition et modernité.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="TripAdvisor">🌐</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a-propos">À Propos</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Hôtel Latitude 21</li>
+                        <li>46 Rue de Paris</li>
+                        <li>97434 Saint-Gilles-les-Bains</li>
+                        <li>La Réunion, France</li>
+                        <li><a href="tel:+262262123456">+262 262 123 456</a></li>
+                        <li><a href="mailto:contact@laparenthese.re">contact@laparenthese.re</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Horaires d'Ouverture</h4>
+                    <ul>
+                        <li><strong>Lundi - Samedi</strong></li>
+                        <li>Déjeuner : 12h00 - 14h30</li>
+                        <li>Dîner : 19h00 - 22h00</li>
+                        <li><strong>Dimanche</strong></li>
+                        <li>Déjeuner : 12h00 - 15h00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Restaurant La Parenthèse - Hôtel Latitude 21 Saint-Gilles. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
